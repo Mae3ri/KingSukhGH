@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KingSukh Guest House</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">KingSukh Guest House</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home" id="home-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" id="about-link">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#services" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="service-link">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#rooms" id="room-link">Rooms Avaibility</a></li>
+              <li><a class="dropdown-item" href="#contact" id="contact-link">Tour Guide</a></li>
+              <li><a class="dropdown-item" href="#services" id="service-link">All Services</a></li>
+             
+             <!--  <li>
+                <hr class="dropdown-divider">
+              </li> -->
+<!--               <li><a class="dropdown-item" href="#contact">Emergency</a></li>
+ -->            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#rooms"  class="nav-link">Rooms</a>
+          </li>
+          <li  class="nav-item">
+            <a href="#gallery" class="nav-link" >Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" >Contact</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search" >
+          <button class="btn btn-outline-success" type="submit" onclick="openWhatsApp()">Book Now</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<!--   home -->
+   <div  id="home" class="home">
+    <div class="text-home">
+      <small class="body-secondary">Simple-Unique-Friendly</small>
+      <h1>Make Yourself At Home In Our <span>Guest House</span></h1>
+    </div>
+   </div>
+   
+
+
+  <br>
+  <br>  <!-- about us -->
+  <div id="about" class="content">
+    <div class="text-section">
+      <p class="motion">About Us <span class="line"></span></p>
+      <h1>The Best Holidays Start Here!</h1>
+      <p class="short-para">Embark on a tranquil journey at our Kingsukh Guest House, enveloped by the scenic allure of Biharinath Hill,
+        Baranti Hill, Susunia Hill, Joychandi Hill, Garhpanchkot, Baranti Dam, Maithan Dam, and the captivating Panchet
+        Dam. Revel in the embrace of comfort, relish delightful meals, and unwind in our verdant garden oasis. Your
+        ideal retreat beckons, promising a harmonious blend of nature's beauty and heartfelt hospitality. Explore the
+        hidden gems of Purulia, creating memories that linger long after your stay.</p>
+        <button class="read-more">Read more</button><br><br>
+      <p class="address">
+        Address: Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156<br>
+        Contact us: +91 9007062180
+      </p>
+    </div>
+    <div class="image-section">
+      <img src="out.jpg" alt="Kingsukh Guest House">
+    </div>
+  </div>
+  <div class="header">
+    <button class="book-now" onclick="openWhatsApp()">Book Now</button>
+  </div>
+  </div>
+
+
+
+  <!-- card and living room -->
+  <div id="rooms" class="album py-5 bg-body-tertiary">
+
+    <!-- living room -->
+    <div class="part">
+      <div class="small">
+        <p class="anime">OUR LIVING ROOM</p>
+        <p>The Most Memorable Rest Time Starts Here.</p>
+      </div>
+    </div>
+
+
+    <!-- card of rooms -->
+    <div class="container-card">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <div class="card-body">
+              <img src="small.jpg" alt="">
+              <h3>Cozy Haven Room</h3>
+              <small class="text-body-secondary">Escape to comfort in our Cozy Haven Room, a snug retreat designed for
+                intimate relaxation.</small>
+              <small class="text-body-secondary">Starting from <span>Rs.1000/night</span></small>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openWhatsApp()">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <img src="large.jpg" alt="">
+              <h3>Spacious Serenity Room</h3>
+              <small class="text-body-secondary">Indulge in luxury and ample space in our Spacious Serenity
+                Suite.</small>
+              <small class="text-body-secondary">Starting from <span>Rs.1500/night</span></small>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openWhatsApp()">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- service section -->
+  <div id="services" class="container-second">
+    <div class="image-section">
+      <img src="seen.jpg" alt="Scenic View">
+    </div>
+
+
+    <div class="services-section">
+      <h2 class="anime">Services <span class="line"></span></h2>
+      <h1>Strive Only For The Best.</h1>
+      <ul>
+        <li>
+          <i class="fas fa-shield-alt"></i>
+          <span>High Class Security</span>
+        </li>
+        <li>
+          <i class="fas fa-concierge-bell"></i>
+          <span>24 Hours Room Service</span>
+        </li>
+        <li>
+          <i class="fas fa-utensils"></i>
+          <span>Restaurant</span>
+        </li>
+        <li>
+          <i class="fas fa-map-marked-alt"></i>
+          <span>Tourist Guide Support</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <!-- service section-2 -->
+  <div class="stats-section">
+    <div class="stat">
+      <h3>100+</h3>
+      <p>Bookings Completed</p>
+    </div>
+    <div class="stat">
+      <h3>150+</h3>
+      <p>Happy Customers</p>
+    </div>
+  </div>
+
+<br>
+<br>
+  <!-- gallary -->
+
+  <div id="gallery" class="gallery">
+    <div class="part-2">
+      <div class="small-2">
+        <p class="anime">GALLERY <span class="line"></span></p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="image">
+      <img src="large.jpg" alt="Image 2">
+    </div>
+    <div class="image">
+      <img src="out.jpg" alt="Image 3">
+    </div>
+    <div class="image">
+      <img src="seen.jpg" alt="Image 4">
+    </div>
+    <div class="image">
+      <img src="small.jpg" alt="Image 5">
+    </div>
+    <div class="image">
+      <img src="1.jpg" alt="Image 6">
+    </div>
+    <div class="image">
+      <img src="baranti.webp" alt="Image 7">
+    </div>
+    <div class="image">
+      <img src="mithonDam.webp" alt="Image 8">
+    </div>
+    <div class="image">
+      <img src="bg.jpg" alt="Image 8">
+    </div>
+    <div class="image">
+      <img src="service.jpg" alt="Image 8">
+    </div>
+    <div class="image">
+      <img src="recep.jpg" alt="Image 8">
+    </div>
+    <div class="image">
+      <img src="header.jpg" alt="Image 8">
+    </div>
+
+  </div>
+
+
+
+
+  <!-- form -->
+  <div id="contact" class="center-wrapper">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Contact Info</h2>
+        <p>
+          <ion-icon class="large-icon" name="location-outline"></ion-icon>
+          Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156
+        </p>
+        <p>
+          <ion-icon name="mail-outline"></ion-icon>
+          kkghosh0099@gmail.com
+        </p>
+        <p>
+          <ion-icon name="call-outline"></ion-icon>
+          +91 9007062180
+        </p>
+        <div class="social-icons">
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></i></a>
+          <a href="#"><ion-icon name="logo-linkedin"></ion-icon><a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h2>Send a Message</h2>
+        <form>
+          <div class="form-group">
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Mobile Number" required>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" onclick="openWhatsApp()">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="mapbox">
+    <div id="map" class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5017351225647!2d86.85721547510981!3d23.586332378782714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6e3fdd3ff9ebb%3A0x517a57e3f93c1807!2sKingsukh%20Guest%20House!5e0!3m2!1sen!2sin!4v1705088034844!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  <br>
+  
+  <!-- footer -->
+  <div class="footer-container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="main-content">
+          <h5>KingSukh Guest House</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Discover a world of
+                comfort,</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">luxury, and adventure as</a>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">you explore our curated</a>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">selection of hotels, making
+                every moment</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">of your getaway truly
+                extraordinary.</a></li>
+          </ul>
+        </div>
+
+        <div class="main-content">
+          <h5>Quick Links</h5>
+          <div class="follow">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#map" class="nav-link p-0 text-body-secondary">Browse Destinations</a>
+              </li>
+              <li class="nav-item mb-2"><a href="#rooms" class="nav-link p-0 text-body-secondary">Special Offer &
+                  Packages</a></li>
+              <li class="nav-item mb-2"><a href="#rooms" class="nav-link p-0 text-body-secondary">Room Types & Amenities</a>
+              </li>
+              <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-body-secondary">Customer Reviews &
+                  Ratings</a></li>
+              <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-body-secondary">Travel Tips & Guides</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="services">
+          <h5>Our Services</h5>
+          <div class="follow">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Concierge Assistance</a>
+              </li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Flexible Booking
+                  Options</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Airport Transfers</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Wellnes & Recreation</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contact-us">
+          <div class="contact">
+            <h5>Contact US</h5>
+            <p>
+            <Address id="map">Beside Barshal Water Tank,Manpur,Barhanti,West Bengal 723156</Address>
+            </p>
+            <p>kkghosh0099@gmail.com</p>
+            <p onclick="openWhatsApp()">+91 9007062180</p>
+            <div class="icons">
+              <ul class="ionicons">
+                <li><ion-icon name="logo-facebook"></ion-icon></li>
+                <li><ion-icon name="logo-youtube"></ion-icon></li>
+                <li><ion-icon name="logo-twitter"></ion-icon></li>
+                <li><ion-icon name="logo-instagram"></ion-icon></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copy-right">
+        <p>© 2024 KingSukh Guest House,All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
